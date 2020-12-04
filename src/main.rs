@@ -1,6 +1,7 @@
 use clap::{App, Arg};
 mod day1;
 mod day2;
+mod day3;
 mod utils;
 
 fn main() {
@@ -28,6 +29,10 @@ fn main() {
         "2" => {
             day2::part1();
             day2::part2();
+        }
+        "3" => {
+            day3::part1();
+            day3::part2();
         }
         _ => println!("Day not found or implemented"),
     }
