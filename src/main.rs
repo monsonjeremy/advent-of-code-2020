@@ -1,9 +1,12 @@
+#![feature(iterator_fold_self)]
+
 use clap::{App, Arg};
 mod day1;
 mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 mod utils;
 
 fn main() {
@@ -43,6 +46,10 @@ fn main() {
         "5" => {
             day5::part1();
             day5::part2();
+        }
+        "6" => {
+            day6::part1();
+            day6::part2();
         }
         _ => println!("Day not found or implemented"),
     }
