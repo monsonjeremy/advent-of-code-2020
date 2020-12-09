@@ -9,6 +9,7 @@ mod day4;
 mod day5;
 mod day6;
 mod day7;
+mod day8;
 mod utils;
 
 fn main() {
@@ -56,6 +57,10 @@ fn main() {
         "7" => {
             day7::part1();
             day7::part2();
+        }
+        "8" => {
+            day8::part1();
+            day8::part2();
         }
         _ => println!("Day not found or implemented"),
     }
